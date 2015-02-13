@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# Add verbose directory change command. Should fix to check if colors are ok with >20 files. 
+# List files to help orient for a new directory.
 maxfiles=64
 files_to_show=4
-function c() {
-  cd $@
+function _list_files() {
   filecount=`ls -l | wc -l`
   if [ $filecount -gt $maxfiles ]; then
     ls -F --color=always | head -n "$files_to_show"
@@ -13,4 +12,23 @@ function c() {
     ls -CF --color=auto
   fi
 }
+
+# Directory change with history
+function c() {
+  if [ $# -eq 0 ]; then
+    pushd ~ > /dev/null
+  else
+    pushd $@ > /dev/null
+  fi
+  _list_files
+}
+
+# Reverse last directory change
+function b() {
+  iecho opd $@ > /dev/null
+  pwd
+  _list_files
+}
+
 export -f c
+export -f b
