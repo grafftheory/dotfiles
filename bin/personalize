@@ -1,0 +1,3 @@
+#!/bin/bash
+
+# Link ~/.foo to my dotfiles and ~/bin/foo to my bin.
