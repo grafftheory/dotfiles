@@ -18,14 +18,14 @@ function c() {
   if [ $# -eq 0 ]; then
     pushd ~ > /dev/null
   else
-    pushd $@ > /dev/null
+    pushd "$@" > /dev/null
   fi
   _list_files
 }
 
 # Reverse last directory change
 function b() {
-  popd $@ > /dev/null
+  popd "$@" > /dev/null
   pwd
   _list_files
 }
