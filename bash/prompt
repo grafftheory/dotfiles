@@ -22,4 +22,4 @@ BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
 
 #PS1="\D{%m/%d} \t \[\e[46m\]\u@\h\[\e[0;34m\] \W \[\e[0m\]" 
-PS1="\D{%b %d}|\t $FBLK$BCYN\u@\h$RS $FBLU\W$RS "
+PS1="\D{%b %d}|\t $FCYN\u@\h$RS $FBLU\W$RS "
