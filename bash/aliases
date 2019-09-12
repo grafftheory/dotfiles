@@ -2,6 +2,7 @@
 
 #SAFETY FIRST
 alias mv='mv -i'
+alias cp='cp -i'
 alias rm='rm -I'
 
 # Orient myself and change directory
@@ -22,6 +23,9 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+# Custom git commands
+alias gist='git log --all --graph --pretty=format:"%h %s%n      %G? %aN %ar %C(yellow)%D%Creset"'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
