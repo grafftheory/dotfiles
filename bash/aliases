@@ -25,7 +25,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # Custom git commands
-alias gist='git log --all --graph --pretty=format:"%h %s%n      %G? %aN %ar %C(yellow)%D%Creset"'
+alias gist='git log --all --graph --pretty=format:"%h %s%n      %G? %aN %ar %C(yellow)%d%Creset"'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
