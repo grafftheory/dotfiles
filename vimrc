@@ -32,7 +32,7 @@ set formatoptions=tcrnj1
 set expandtab
 set shiftwidth=4
 set softtabstop=-1
-set listchars=tab:▸\
+set listchars=tab:▸·
 set list
 
 nnoremap j gj
