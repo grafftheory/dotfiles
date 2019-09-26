@@ -16,6 +16,7 @@ set cursorline
 set scrolloff=3
 
 set number
+set foldcolumn=1
 set laststatus=2
 set ruler
 set showmode
