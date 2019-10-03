@@ -37,7 +37,7 @@ set smartcase
 map <leader><space> :let @/=''<cr>
 
 set textwidth=82
-set formatoptions=tcrnj1
+set formatoptions=rnj1
 set expandtab
 set shiftwidth=4
 set softtabstop=-1
