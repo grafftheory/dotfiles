@@ -1,3 +1,7 @@
+set modelines=0
+set ttyfast
+set encoding=utf-8
+
 set shell=sh
 set nocompatible
 filetype off
@@ -8,17 +12,21 @@ set guioptions-=r
 set guioptions-=T
 set guioptions-=m
 
+syntax on
 color industry
 color summersnow
 
-syntax on
-
 filetype plugin indent on
-set number
 set linebreak
 set breakindent
 set cursorline
+set scrolloff=3
+
+set number
+set foldcolumn=1
 set laststatus=2
+set ruler
+>>>>>>> master
 set showmode
 set showcmd
 
@@ -33,7 +41,7 @@ set formatoptions=tcrnj1
 set expandtab
 set shiftwidth=4
 set softtabstop=-1
-set listchars=tab:>\
+set listchars=tab:▸·
 set list
 
 nnoremap j gj
@@ -49,6 +57,7 @@ nnoremap k gk
 " noremap T gT
 
 " Make page up/page down easier and more sensible.
+" Also makes join and lookup harder to do accidently.
 noremap J <C-f>
 noremap K <C-b>
 noremap <C-j> J
