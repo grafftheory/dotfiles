@@ -46,6 +46,8 @@ noremap K <C-b>
 noremap <C-j> J
 noremap <C-k> K
 
-" C style code folding shortcut
-
-noremap zb /^}<cr>zf%
+" C style code folding shortcuts
+"  z[ folds current or previous unindented brackets block
+"  z] folds current or next unindented brackets block
+noremap z[ ?^{<cr>zf%
+noremap z] /^}<cr>zf%
