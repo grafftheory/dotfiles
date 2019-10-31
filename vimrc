@@ -6,6 +6,22 @@ set shell=sh
 set nocompatible
 filetype off
 
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'rust-lang/rust.vim'
+Plugin 'JuliaLang/julia-vim'
+Plugin 'tpope/vim-surround'
+Plugin 'Raimondi/delimitMate'
+
+call vundle#end()
+
+let delimitMate_matchpairs = "(:),[:],{:}"
+let delimitMate_expand_cr = 1
+let delimitMate_nesting_quotes = ['"']
+let delimitMate_expand_inside_quotes = 1
+
 "set guifont=Courier\ 10\ Pitch\ 9
 set guifont=Source\ Code\ Pro\ 8
 set guioptions-=r
@@ -26,7 +42,6 @@ set number
 set foldcolumn=1
 set laststatus=2
 set ruler
->>>>>>> master
 set showmode
 set showcmd
 
