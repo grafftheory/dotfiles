@@ -45,3 +45,7 @@ noremap J <C-f>
 noremap K <C-b>
 noremap <C-j> J
 noremap <C-k> K
+
+" C style code folding shortcut
+
+noremap zb /^}<cr>zf%
