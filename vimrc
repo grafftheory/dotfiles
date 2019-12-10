@@ -51,3 +51,6 @@ noremap <C-k> K
 "  z] folds current or next unindented brackets block
 noremap z[ ?^{<cr>zf%
 noremap z] /^}<cr>zf%
+
+" Get local settings
+source ~/.vim.local
