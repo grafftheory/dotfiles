@@ -63,7 +63,7 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 noremap zh zcVzCzvzc
 noremap zl zo
 
-noremap <leader>h zc
+noremap <leader>h zcVzCzvzc
 noremap <leader>j zj
 noremap <leader>k zk
 noremap <leader>l zo
