@@ -61,6 +61,11 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 noremap zh zcVzCzvzc
 noremap zl zo
 
+noremap <leader>h zc
+noremap <leader>j zj
+noremap <leader>k zk
+noremap <leader>l zo
+
 " Fast buffer switch
 noremap <leader>b :ls<CR>:b<space>
 
