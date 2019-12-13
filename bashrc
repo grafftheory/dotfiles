@@ -46,16 +46,21 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Define aliases
-. ~/dotfiles/bash/aliases
+# Set dotfiles root directory (changable with local settings)
 
-# Define custom bash functions
-. ~/dotfiles/bash/funcs
-
-# Define Prompt
-. ~/dotfiles/bash/prompt
+DOTFILES_ROOT_DIR=~/.config/dotfiles
 
 # Apply Local Settings
 if [ -r ~/.bash.local ]; then
     . ~/.bash.local
 fi
+
+# Define aliases
+. ${DOTFILES_ROOT_DIR}/bash/aliases
+
+# Define custom bash functions
+. ${DOTFILES_ROOT_DIR}/bash/funcs
+
+# Define Prompt
+. ${DOTFILES_ROOT_DIR}/bash/prompt
+
