@@ -21,6 +21,8 @@ set ruler
 set showmode
 set showcmd
 
+let mapleader = ","
+
 set hlsearch
 set ignorecase
 set smartcase
