@@ -54,7 +54,7 @@ set numberwidth=1
 
 let g:tex_fold_enabled=1
 
-noremap zh zc
+noremap zh zcVzCzvzc
 noremap zl zo
 
 " Get local settings
