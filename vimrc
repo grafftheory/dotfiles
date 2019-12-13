@@ -16,7 +16,6 @@ set cursorline
 set scrolloff=3
 
 set number
-set foldcolumn=1
 set laststatus=2
 set ruler
 set showmode
@@ -46,11 +45,17 @@ noremap K <C-b>
 noremap <C-j> J
 noremap <C-k> K
 
-" C style code folding shortcuts
-"  z[ folds current or previous unindented brackets block
-"  z] folds current or next unindented brackets block
-noremap z[ ?^{<cr>zf%
-noremap z] /^}<cr>zf%
+" Code folding
+
+set foldmethod=syntax
+set foldtext=getline(v:foldstart)
+set foldcolumn=4
+set numberwidth=1
+
+let g:tex_fold_enabled=1
+
+noremap zh zc
+noremap zl zo
 
 " Get local settings
 source ~/.vim.local
