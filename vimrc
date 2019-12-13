@@ -54,6 +54,10 @@ set numberwidth=1
 
 let g:tex_fold_enabled=1
 
+" Thank you to @eckes in https://stackoverflow.com/a/4654859
+autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
+autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
+
 noremap zh zcVzCzvzc
 noremap zl zo
 
