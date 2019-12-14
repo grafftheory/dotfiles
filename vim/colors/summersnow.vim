@@ -13,11 +13,16 @@ endif
 
 let colors_name = "summersnow"
 
-hi Normal guibg=#002b36 guifg=#839496 ctermbg=NONE ctermfg=NONE
-hi LineNr guibg=#174652 guifg=#555753 ctermbg=Black ctermfg=Darkgrey cterm=bold
-hi FoldColumn guibg=#174652 guifg=#555753 ctermbg=Black ctermfg=Darkgrey cterm=bold
-hi Folded guibg=#174652 guifg=#555753 ctermbg=Black ctermfg=Darkgrey cterm=bold
-hi CursorLine cterm=NONE guibg=#174652 ctermbg=Black
+hi Normal       guibg=#002b36 guifg=#839496 ctermbg=NONE    ctermfg=NONE
+hi LineNr       guibg=#174652 guifg=#555753 ctermbg=Black   ctermfg=8       cterm=bold
+hi FoldColumn   guibg=#174652 guifg=#555753 ctermbg=Black   ctermfg=8       cterm=bold
+hi Folded       guibg=#174652 guifg=#555753 ctermbg=Black   ctermfg=8       cterm=bold
+hi CursorLine   guibg=#174652               ctermbg=Black                   cterm=NONE
+
+hi DiffAdd      ctermfg=Green       ctermbg=Black
+hi DiffChange   ctermfg=Yellow      ctermbg=Black
+hi DiffDelete   ctermfg=Red         ctermbg=Black
+hi DiffText     ctermfg=Yellow      ctermbg=none    cterm=reverse
 
 " Syntax highlighting (other color-groups using default, see :help group-name):
 hi Comment     ctermfg=Cyan     cterm=NONE       gui=NONE guifg=#34e2e2
@@ -27,6 +32,6 @@ hi Function    ctermfg=Green    cterm=NONE       gui=NONE guifg=#88de37
 hi Statement   ctermfg=White    cterm=bold       gui=bold guifg=#eeeeec
 hi PreProc     ctermfg=Yellow   cterm=NONE       gui=NONE guifg=#fce94f
 hi Type        ctermfg=Green    cterm=bold       gui=bold guifg=#88de37
-hi Special     ctermfg=LightRed cterm=NONE       gui=NONE guifg=#ef3636
+hi Special     ctermfg=Red      cterm=NONE       gui=NONE guifg=#ef3636
 hi Delimiter   ctermfg=Yellow   cterm=NONE       gui=NONE guifg=#fce94f
 
