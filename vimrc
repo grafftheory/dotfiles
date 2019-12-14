@@ -51,6 +51,7 @@ noremap <C-k> K
 
 set foldmethod=syntax
 set foldtext=getline(v:foldstart)
+set foldminlines=4
 set foldcolumn=4
 set numberwidth=1
 
