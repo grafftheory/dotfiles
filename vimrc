@@ -49,9 +49,9 @@ noremap <C-k> K
 
 " Code folding
 
-set foldmethod=syntax
+set foldmethod=indent
+set foldminlines=2
 set foldtext=getline(v:foldstart)
-set foldminlines=4
 set foldcolumn=4
 set numberwidth=1
 
