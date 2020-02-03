@@ -25,6 +25,9 @@ alias la='ls -ACF'
 alias l='ls -CF'
 
 # Custom git commands
+alias gst='git status'
+alias gd='git diff'
+alias gl='git log --all --graph --oneline --decorate'
 alias gist='git log --all --graph --pretty=format:"%h %s%n      %G? %aN %ar %C(yellow)%d%Creset"'
 
 # Add an "alert" alias for long running commands.  Use like so:
